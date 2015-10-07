@@ -12,4 +12,7 @@ describe FizzBuzz do
   it "returns Fizzbuzz if given a multiple of 3 and 5" do
     expect(subject.process(15)).to eq("Fizzbuzz")
   end
+  it "returns the number if it not a multiple or 3 or 5" do
+    expect(subject.process(2)).to eq(2)
+  end
 end
